@@ -11,7 +11,8 @@
     />
     <title>Web Topics</title>
     <link href="variables.css" type="text/css" rel="stylesheet" />
-    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <link href="details.css" type="text/css" rel="stylesheet" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -24,7 +25,7 @@
   <body>
     <header>
       <div class="top-bar container">
-        <h3>Web Topics</h3>
+        <h3 id="details-top-bar-title">Web Topics</h3>
         <button>
           <ion-icon name="moon-outline" class="icon"></ion-icon>
           <p class="icon-button-text">Dark Mode</p>
@@ -41,7 +42,7 @@
         <div class="polygon1"></div>
       </div>
       <div class="title-container container">
-        <div class="script-container">
+        <div class="script-container" id="details-script-container">
           <h2>Welcome to our website!</h2>
           <p>We have a new design that's fresh, modern, and easy to use.</p>
         </div>
@@ -49,7 +50,7 @@
     </header>
     <main class="details-main">
       <section class="details-banner">
-        <div class="details-box">
+        <div class="details-content">
           <div class="details-info">
             <h3>Web Development Languages</h3>
             <h2>HTML</h2>
@@ -68,21 +69,23 @@
               and is a foundational technology for the World Wide Web.
             </p>
           </div>
-          <div class="details-card">
-            <div class="image-banner">
-              <img src="assets/images/javascript.jpg" />
-            </div>
-            <div class="details-card-info">
-              <p class="details-card-title">
-                HTML <span id="by-span">by</span>
-                <span id="details-card-author">Sarah Smith</span>
-              </p>
-              <div class="add-favourite-box">
-                <p>Interested about this topic?</p>
-                <button>
-                  Add to favorites <ion-icon name="heart-outline"></ion-icon>
-                </button>
-                <p>Unlimited Credits</p>
+          <div class="details-card-container">
+            <div class="details-card">
+              <div class="image-banner">
+                <img src="assets/images/javascript.jpg" />
+              </div>
+              <div class="details-card-info">
+                <p class="details-card-title">
+                  HTML <span id="by-span">by</span>
+                  <span id="details-card-author">Sarah Smith</span>
+                </p>
+                <div class="add-favourite-box">
+                  <p>Interested about this topic?</p>
+                  <button>
+                    Add to favorites <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <span>Unlimited Credits</span>
+                </div>
               </div>
             </div>
           </div>
@@ -140,7 +143,7 @@
         <div></div>
       </section>
       <footer>
-        <p>Developed with <ion-icon name="heart"></ion-icon> © 2023</p>
+        <span>Developed with <ion-icon name="heart"></ion-icon> © 2023</span>
       </footer>
     </main>
   </body>
