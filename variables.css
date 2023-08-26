@@ -1,7 +1,7 @@
 :root {
   /*light mode colors*/
-  --brand-primary: rgb(7, 104, 172);
-  --brand-secondary: rgb(3, 193, 128);
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
   --bg_default: #ffffff;
   --bg_body: #f0f9ff;
   --lines-color: #dddddd;
@@ -9,6 +9,12 @@
   --heart-color: #dc143c;
   --gray-font:gray;
   --stars-gold:#e4991e;
+  --black:black;
+  --dark-bg: #333333;
+  --white-bg:#ffffff;
+  --dark-text:#333333;
+  --light-border:#dddddd;
+
 
   /*dark mode colors*/
 

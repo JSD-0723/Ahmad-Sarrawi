@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link href="details.css" type="text/css" rel="stylesheet" />
     <title>Web Topics</title>
-    <script src="script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -22,23 +21,22 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    
   </head>
   <body>
     <header>
       <div class="top-bar container">
         <h3>Web Topics</h3>
-        <button>
+        <button class="dark-mode-button">
           <ion-icon name="moon-outline" class="icon"></ion-icon>
           <span class="icon-button-text">Dark Mode</span>
         </button>
 
-        <button>
+        <button class="show-favorites-button">
           <ion-icon name="heart-outline" class="icon"></ion-icon>
           <span class="icon-button-text">Favourites</span>
         </button>
       </div>
-      
+
       <div class="polygons-banner">
         <div class="polygon2"></div>
         <div class="polygon1"></div>
@@ -52,26 +50,26 @@
     </header>
     <main>
       <div class="container">
-      <section class="search-section">
-        <div class="search-bar">
-          <ion-icon name="search-outline" id="search-icon"></ion-icon>
-          <input type="text" placeholder="Search the website..." />
-        </div>
-        <div class="drop-downs-bar">
-          <div class="drop-down-container" id="sort-box">
-            <label for="sort">Sort by:</label>
-            <select name="sort" id="sort">
-              <option value="Default">Default</option>
-            </select>
+        <section class="search-section">
+          <div class="search-bar">
+            <ion-icon name="search-outline" id="search-icon"></ion-icon>
+            <input type="text" placeholder="Search the website..." />
           </div>
-          <div class="drop-down-container" id="filter-box">
-            <label for="filter">Filter by:</label>
-            <select name="filter" id="filter">
-              <option value="Default">Default</option>
-            </select>
+          <div class="drop-downs-bar">
+            <div class="drop-down-container" id="sort-box">
+              <label for="sort">Sort by:</label>
+              <select name="sort" id="sort">
+                <option value="Default">Default</option>
+              </select>
+            </div>
+            <div class="drop-down-container" id="filter-box">
+              <label for="filter">Filter by:</label>
+              <select name="filter" id="filter">
+                <option value="Default">Default</option>
+              </select>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
       <div class="search-result-title container">
         <h1>"24" Web Topics Found</h1>
@@ -91,7 +89,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Sarah Smith</span>
+            <span class="author-name">Author: Sarah Smith</span>
           </div>
         </a>
         <!-----------------Card--------------->
@@ -109,7 +107,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: David Lee</span>
+            <span class="author-name">Author: David Lee</span>
           </div>
         </a>
 
@@ -128,7 +126,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Emily Chen</span>
+            <span class="author-name">Author: Emily Chen</span>
           </div>
         </a>
         <!--------------Card--------------->
@@ -146,7 +144,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: John Johnson</span>
+            <span class="author-name">Author: John Johnson</span>
           </div>
         </a>
 
@@ -165,7 +163,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Jessica Davis</span>
+            <span class="author-name">Author: Jessica Davis</span>
           </div>
         </a>
 
@@ -184,7 +182,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Sarah Smith</span>
+            <span class="author-name">Author: Sarah Smith</span>
           </div>
         </a>
         <!--------------Card--------------->
@@ -202,7 +200,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: David Lee</span>
+            <span class="author-name">Author: David Lee</span>
           </div>
         </a>
 
@@ -221,7 +219,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Emily Chen</span>
+            <span class="author-name">Author: Emily Chen</span>
           </div>
         </a>
         <!--------------Card--------------->
@@ -239,7 +237,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: John Johnson</span>
+            <span class="author-name">Author: John Johnson</span>
           </div>
         </a>
 
@@ -258,7 +256,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Jessica Davis</span>
+            <span class="author-name">Author: Jessica Davis</span>
           </div>
         </a>
         <!---------------Card--------------->
@@ -276,7 +274,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Sarah Smith</span>
+            <span class="author-name">Author: Sarah Smith</span>
           </div>
         </a>
         <!--------------Card--------------->
@@ -294,7 +292,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: David Lee</span>
+            <span class="author-name">Author: David Lee</span>
           </div>
         </a>
 
@@ -313,7 +311,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Emily Chen</span>
+            <span class="author-name">Author: Emily Chen</span>
           </div>
         </a>
         <!---------------Card--------------->
@@ -331,7 +329,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: John Johnson</span>
+            <span class="author-name">Author: John Johnson</span>
           </div>
         </a>
 
@@ -351,7 +349,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Sarah Smith</span>
+            <span class="author-name">Author: Sarah Smith</span>
           </div>
         </a>
         <!--------------Card--------------->
@@ -369,7 +367,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: David Lee</span>
+            <span class="author-name">Author: David Lee</span>
           </div>
         </a>
 
@@ -388,7 +386,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Emily Chen</span>
+            <span class="author-name">Author: Emily Chen</span>
           </div>
         </a>
         <!--------------Card--------------->
@@ -406,7 +404,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: John Johnson</span>
+            <span class="author-name">Author: John Johnson</span>
           </div>
         </a>
 
@@ -425,7 +423,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Jessica Davis</span>
+            <span class="author-name">Author: Jessica Davis</span>
           </div>
         </a>
 
@@ -444,7 +442,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Sarah Smith</span>
+            <span class="author-name">Author: Sarah Smith</span>
           </div>
         </a>
         <!--------------Card--------------->
@@ -462,7 +460,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: David Lee</span>
+            <span class="author-name">Author: David Lee</span>
           </div>
         </a>
 
@@ -481,7 +479,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Emily Chen</span>
+            <span class="author-name">Author: Emily Chen</span>
           </div>
         </a>
         <!-----------------Card--------------->
@@ -499,7 +497,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: John Johnson</span>
+            <span class="author-name">Author: John Johnson</span>
           </div>
         </a>
 
@@ -518,7 +516,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Jessica Davis</span>
+            <span class="author-name">Author: Jessica Davis</span>
           </div>
         </a>
         <!-----------------Card--------------->
@@ -536,7 +534,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Sarah Smith</span>
+            <span class="author-name">Author: Sarah Smith</span>
           </div>
         </a>
         <!-----------------Card--------------->
@@ -554,7 +552,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: David Lee</span>
+            <span class="author-name">Author: David Lee</span>
           </div>
         </a>
 
@@ -573,7 +571,7 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: Emily Chen</span>
+            <span class="author-name">Author: Emily Chen</span>
           </div>
         </a>
         <!-----------------Card--------------->
@@ -591,48 +589,51 @@
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
-            <span class="author-name" >Author: John Johnson</span>
+            <span class="author-name">Author: John Johnson</span>
           </div>
         </a>
         <!-----------------Card--------------->
       </section>
-      <section class="favorites-bottom-section container">
+      <section class="favorites-bottom-section container invisible">
         <p>My Favorite Topics</p>
         <div class="favorite-cards-container">
           <div class="favorite-card">
             <div class="favorite-card-img-banner">
-              <img/>
+              <img src="assets/images/react.webp" />
             </div>
-            <div>
+            <div class="favorite-card-info-box">
               <span>React</span>
               <div class="rating-container">
-              <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
-              ><ion-icon name="star"></ion-icon
-              ><ion-icon name="star"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-            </div>
+                <ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
             </div>
           </div>
           <!-----favorite card-->
           <div class="favorite-card">
             <div class="favorite-card-img-banner">
-              <img/>
+              <img src="assets/images/cloud.jpeg" />
             </div>
-            <div>
-              <span>React</span>
+            <div class="favorite-card-info-box">
+              <span>Cloud Computing</span>
               <div class="rating-container">
-              <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
-              ><ion-icon name="star"></ion-icon
-              ><ion-icon name="star"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-            </div>
+                <ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-    <span>Developed with <ion-icon name="heart"></ion-icon> © 2023</span>
-      </footer>
+      <span>Developed with <ion-icon name="heart"></ion-icon> © 2023</span>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

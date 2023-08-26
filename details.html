@@ -26,12 +26,12 @@
     <header>
       <div class="top-bar container">
         <h3 id="details-top-bar-title">Web Topics</h3>
-        <button>
+        <button class="dark-mode-button">
           <ion-icon name="moon-outline" class="icon"></ion-icon>
           <p class="icon-button-text">Dark Mode</p>
         </button>
 
-        <button>
+        <button class="show-favorites-button">
           <ion-icon name="heart-outline" class="icon"></ion-icon>
           <p class="icon-button-text">Favourites</p>
         </button>
@@ -142,9 +142,48 @@
         </div>
         <div></div>
       </section>
+
+      <section class="favorites-bottom-section container invisible">
+        <p>My Favorite Topics</p>
+        <div class="favorite-cards-container">
+          <div class="favorite-card">
+            <div class="favorite-card-img-banner">
+              <img src="assets/images/react.webp" />
+            </div>
+            <div class="favorite-card-info-box">
+              <span>React</span>
+              <div class="rating-container">
+                <ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <!-----favorite card-->
+          <div class="favorite-card">
+            <div class="favorite-card-img-banner">
+              <img src="assets/images/cloud.jpeg" />
+            </div>
+            <div class="favorite-card-info-box">
+              <span>Cloud Computing</span>
+              <div class="rating-container">
+                <ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer>
-        <span>Developed with <ion-icon name="heart"></ion-icon> © 2023</span>
-      </footer>
+      <span>Developed with <ion-icon name="heart"></ion-icon> © 2023</span>
+    </footer>
     </main>
+    
+    <script src="script.js"></script>
   </body>
 </html>

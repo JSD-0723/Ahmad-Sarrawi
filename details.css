@@ -1,6 +1,10 @@
 .details-main {
   padding-top: 0px;
 }
+body{
+  background-color: var(--bg_body);
+  color: var(--body-text);
+}
 #details-script-container {
   margin-bottom: 0px;
   padding-bottom: 18px;
@@ -10,7 +14,7 @@
   border: 4px solid red;
 }
 .details-banner {
-  background-color: var(--body-text);
+  background-color: var(--dark-bg);
   min-height: 200px;
   padding-block: 30px;
   color: var(--dark-body-text);
@@ -41,7 +45,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  background-color: var(--bg_default);
+  background-color: var(--white-bg);
+  border: 1px solid var(--lines-color);
 }
 .image-banner {
   height: 50%;
@@ -50,11 +55,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* object-fit: contain; */
+  
 }
 .details-card-info {
-  background-color: var(--bg_default);
-  color: var(--body-text);
+  background-color: var(--white-bg);
+  color: var(--dark-text);
   padding: 20px 16px 16px;
   height: 50%;
 }
@@ -71,7 +76,7 @@
 }
 
 .add-favourite-box {
-  border: 1px solid var(--lines-color);
+  border: 1px solid var(--light-border);
   padding: 20px 16px 0px;
   margin-bottom: 24px;
 }

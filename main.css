@@ -4,13 +4,21 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", "sans-serif";
 }
+
+.invisible {
+  display: none;
+}
+
 body {
   background-color: var(--bg_body);
+  color: var(--body-text);
 }
 .card,
 .search-section {
   box-shadow: 0px 0px 4px var(--lines-color);
+  background-color: var(--bg_default);
 }
+
 .container {
   padding-inline: 15px;
   margin-inline: auto;
@@ -36,7 +44,8 @@ h1 {
   font-size: 15px;
 }
 .top-bar button {
-  background-color: transparent;
+  background-color: var(--bg_default);
+  color: var(--body-text);
   border: 1px solid rgb(128, 128, 128, 0.3);
   box-shadow: 1px 1px rgb(128, 128, 128, 0.1);
   border-radius: 5px;
@@ -81,6 +90,7 @@ h1 {
 .script-container {
   padding-top: 9px;
   margin-bottom: 20px;
+  color: var(--body-text);
 }
 
 .script-container h2 {
@@ -101,7 +111,8 @@ main {
 }
 
 .search-section {
-  background-color: #fff;
+  background-color: var(--bg_default);
+  color: var(--body-text);
   display: flex;
   /* margin-inline: 15px; */
   flex-wrap: wrap;
@@ -125,6 +136,8 @@ main {
   font-size: 15px;
   padding-left: 2px;
   font-weight: 600;
+  background-color: var(--bg_default);
+  color: var(--body-text);
 }
 .search-bar #search-icon {
   margin-inline: 10px;
@@ -145,6 +158,7 @@ main {
   padding-left: 12px;
   padding-right: 8px;
   justify-content: center;
+ 
 }
 a {
   text-decoration: none;
@@ -159,6 +173,8 @@ a {
 .drop-down-container select {
   border: none;
   font-weight: 700;
+  background-color: var(--bg_default);
+  color: var(--body-text);
 }
 #filter-box {
   border-left: 1px solid var(--lines-color);
@@ -182,6 +198,8 @@ a {
 .image-banner {
   height: 50%;
   overflow: hidden;
+  background-color: white;
+  color: var(--body-text);
 }
 .image-banner img {
   width: 100%;
@@ -229,18 +247,66 @@ a {
   bottom: 0;
   width: 100%;
   z-index: 3;
+  padding-top: 12px;
+  box-shadow: 0px 0px 16px -13px var(--black);
 }
-.favorite-cards-container{
+.favorites-bottom-section > :first-child {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.favorite-cards-container {
   display: flex;
-  
+  /* flex-wrap: wrap; */
+  overflow-y: scroll;
+  gap: 12px;
+  height: 128px;
+  /* width: 190px; */
+  padding-bottom: 14px;
+  flex-wrap: wrap;
 }
-.favorite-card{
-
+.favorite-cards-container::-webkit-scrollbar{
+  display: none;
 }
-.favorite-card-img-banner{
-
+.favorite-card {
+  flex: 1, 0, unset;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 122px;
+  box-shadow: 0px 0px 10px -7px var(--black);
 }
-
+.favorite-card-img-banner {
+  height: 60px;
+}
+.favorite-card-img-banner img {
+  object-fit: cover;
+  height: 100%;
+  /* background-color: red; */
+  width: 100%;
+}
+.favorite-card-info-box {
+  padding: 5px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+.favorite-card-info-box > :first-child {
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+  width: 110px;
+  /* background-color: red; */
+}
+/* section class="favorites-bottom-section container invisible">
+        <p>My Favorite Topics</p>
+        <div class="favorite-cards-container">
+          <div class="favorite-card">
+            <div class="favorite-card-img-banner">
+              <img/>
+            </div> */
 
 @media (min-width: 270px) {
   .icon-button-text {
