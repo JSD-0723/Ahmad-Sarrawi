@@ -1,6 +1,8 @@
 const favoritesBar = document.querySelector(".favorites-bottom-section");
-console.log(favoritesBar);
-document.querySelector(".show-favorites-button").addEventListener("click", () => favoritesBar.classList.toggle("invisible"));
+
+document
+  .querySelector(".show-favorites-button")
+  .addEventListener("click", () => favoritesBar.classList.toggle("invisible"));
 
 const root = document.querySelector(":root");
 
@@ -29,3 +31,5 @@ function toggleDarkMode() {
 document
   .querySelector(".dark-mode-button")
   .addEventListener("click", toggleDarkMode);
+
+

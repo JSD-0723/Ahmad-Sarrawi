@@ -49,14 +49,14 @@
       </div>
     </header>
     <main class="details-main">
-      <section class="details-banner">
-        <div class="details-content">
-          <div class="details-info">
-            <h3>Web Development Languages</h3>
-            <h2>HTML</h2>
-            <div class="rating-container">
-              <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
-              ><ion-icon name="star"></ion-icon
+      <section class="grid-container">
+
+        <div class="details-info">
+          <h3>Web Development Languages</h3>
+          <h2>HTML</h2>
+          <div class="rating-container">
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
+            ><ion-icon name="star"></ion-icon
               ><ion-icon name="star"></ion-icon>
               <ion-icon name="star-outline"></ion-icon>
             </div>
@@ -69,80 +69,86 @@
               and is a foundational technology for the World Wide Web.
             </p>
           </div>
-          <div class="details-card-container">
-            <div class="details-card">
-              <div class="image-banner">
-                <img src="assets/images/javascript.jpg" />
-              </div>
-              <div class="details-card-info">
-                <p class="details-card-title">
-                  HTML <span id="by-span">by</span>
-                  <span id="details-card-author">Sarah Smith</span>
-                </p>
-                <div class="add-favourite-box">
-                  <p>Interested about this topic?</p>
-                  <button>
-                    Add to favorites <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-                  <span>Unlimited Credits</span>
-                </div>
+          <div class="details-card">
+            <div class="image-banner">
+              <img src="assets/images/javascript.jpg" />
+            </div>
+            <div class="details-card-info">
+              <span class="details-card-title ">
+                <span  class="dotted-text" >HTML</span> <span id="by-span" class="dotted-text">by</span>
+                <span  id="details-card-author">Sarah Smith</span>
+              </span>
+              <div class="add-favourite-box">
+                <p>Interested about this topic?</p>
+                <button>
+                  Add to Favourites <ion-icon name="heart-outline"></ion-icon>
+                </button>
+                <span>Unlimited Credits</span>
               </div>
             </div>
+          </div>
+          <div class="list-container">
+            <h2>HTML Sub Topics</h2>
+            <ul>
+              <li><span>
+                <ion-icon
+                name="checkmark-circle-outline"
+                class="sub-topics-icon"
+                ></ion-icon
+                >HTML syntax and structures</span>
+              </li>
+              <li><span>
+                <ion-icon
+                name="checkmark-circle-outline"
+                class="sub-topics-icon"
+                ></ion-icon
+                >HTML elements and attributes</span>
+              </li>
+              <li><span>
+                <ion-icon
+                name="checkmark-circle-outline"
+                class="sub-topics-icon"
+                ></ion-icon
+                >HTML forms and input elements</span>
+              </li>
+              <li><span>
+                <ion-icon
+                name="checkmark-circle-outline"
+                class="sub-topics-icon"
+                ></ion-icon
+                >HTML tables and lists</span>
+              </li>
+              <li><span>
+                <ion-icon
+                name="checkmark-circle-outline"
+                class="sub-topics-icon"
+                ></ion-icon
+                >HTML multimedia elements (audio, video, images)</span>
+              </li>
+              <li><span>
+                <ion-icon
+                name="checkmark-circle-outline"
+                class="sub-topics-icon"
+                ></ion-icon
+                >HTML accessibility and semantic markup</span>
+              </li>
+            </ul>
+          </div>
+          <footer>
+          <span>Developed with <ion-icon name="heart"></ion-icon> © 2023</span>
+        </footer>
+        </section>
+        <!-- <section class="details-banner">
+          <div class="details-content">
+          <div class="details-card-container">
           </div>
         </div>
       </section>
 
       <section class="sub-topics">
-        <div class="list-container">
-          <h2>HTML Sub Topics</h2>
-          <ul>
-            <li>
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="sub-topics-icon"
-              ></ion-icon
-              >HTML syntax and structures
-            </li>
-            <li>
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="sub-topics-icon"
-              ></ion-icon
-              >HTML elements and attributes
-            </li>
-            <li>
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="sub-topics-icon"
-              ></ion-icon
-              >HTML forms and input elements
-            </li>
-            <li>
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="sub-topics-icon"
-              ></ion-icon
-              >HTML tables and lists
-            </li>
-            <li>
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="sub-topics-icon"
-              ></ion-icon
-              >HTML multimedia elements (audio, video, images)
-            </li>
-            <li>
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="sub-topics-icon"
-              ></ion-icon
-              >HTML accessibility and semantic markup
-            </li>
-          </ul>
-        </div>
         <div></div>
-      </section>
-
+      </section> -->
+      
       <section class="favorites-bottom-section container invisible">
         <p>My Favorite Topics</p>
         <div class="favorite-cards-container">
@@ -179,9 +185,6 @@
           </div>
         </div>
       </section>
-      <footer>
-      <span>Developed with <ion-icon name="heart"></ion-icon> © 2023</span>
-    </footer>
     </main>
     
     <script src="script.js"></script>
