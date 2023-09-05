@@ -14,10 +14,6 @@ body {
   margin-bottom: 0px;
   padding-bottom: 18px;
 }
-/* .details-container {
-  width: 600px;
-  border: 4px solid red;
-} */
 
 .grid-container {
   display: grid;
@@ -25,21 +21,20 @@ body {
     " info info card "
     " list list card "
     "footer footer footer ";
-  /* padding-inline: 40px;
-  gap: 30px;
-  width: 67%; */
   margin-inline: auto;
 }
-
+.details-card-container {
+  grid-area: card;
+  overflow: visible;
+}
 .details-info {
   grid-area: info;
   background-color: var(--dark-bg);
   color: var(--white-text);
   box-shadow: 0 0 0 100vw var(--dark-bg);
   clip-path: inset(0 -100vw);
-  /* padding-block: 20px; */
 }
-.details-info h3 {
+.details-info h2 {
   color: var(--brand-secondary);
 }
 footer {
@@ -51,34 +46,25 @@ footer {
   flex-direction: column;
   background-color: var(--white-bg);
   border: 1px solid var(--lines-color);
-  grid-area: card;
-
   position: relative;
 }
 .list-container {
   border: 1px solid var(--lines-color);
   background-color: var(--bg_default);
-  /* width: 100%; */
   grid-area: list;
-  /* width: 60%; */
 }
 
-/* .image-banner {
-  height: 50%;
-} */
-.image-banner img {
-  /* width: 100%;
+.details-image-banner img {
+  width: 100%;
   height: 100%;
-  object-fit: cover; */
+  object-fit: cover;
 }
 .details-card-info {
   background-color: var(--white-bg);
   color: var(--dark-text);
-  /* padding: 20px 16px 16px; */
 }
 .details-card-title {
   font-weight: 700;
-  /* margin-bottom: 10px; */
 }
 #by-span {
   font-weight: 400;
@@ -90,15 +76,12 @@ footer {
 
 .add-favourite-box {
   border: 1px solid var(--light-border);
-  /* padding: 20px 16px 0px; */
-  /* margin-bottom: 24px; */
 }
 .add-favourite-box button {
   background-color: var(--brand-secondary);
   border: none;
   color: white;
   width: 100%;
-  /* height: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,31 +89,16 @@ footer {
   font-size: 20px;
   font-weight: 400;
   border-radius: 2px;
-  /* margin-bottom: 10px; */
 }
-.add-favourite-box button ion-icon {
-  /* font-size: 30px; */
-}
-.add-favourite-box > :first-child {
-  /* margin-bottom: 10px; */
-}
+
 .add-favourite-box > :last-child {
   color: var(--gray-font);
-  /* margin-bottom: 10px; */
   font-size: 14px;
   display: block;
   text-align: center;
   margin-inline: auto;
 }
-/* .sub-topics {
-  margin: 0 auto 30px;
-  gap: 30px;
-  
-} */
 
-.list-container h2 {
-  /* padding: 20px 10px 16px 26px; */
-}
 .list-container ul {
   list-style-type: none;
   display: flex;
@@ -155,14 +123,13 @@ footer {
       "list"
       "footer  ";
   }
-  .image-banner{
+  .details-image-banner {
     height: 200px;
   }
   .details-info {
     padding: 15px;
   }
   .details-card {
-    
     margin-bottom: 24px;
   }
   .details-card-info {
@@ -215,7 +182,6 @@ footer {
     margin-bottom: 20px;
   }
   .list-container h2 {
-    /* margin-inline: 14px; */
     padding: 8px 14px;
   }
   .list-container ul li {
@@ -226,13 +192,10 @@ footer {
     padding: 8px 14px;
     gap: 4px;
     display: flex;
-
-   
   }
 }
 @media (min-width: 560px) {
-  
-  .image-banner{
+  .details-image-banner {
     height: 300px;
   }
   .details-card-title span {
@@ -251,101 +214,64 @@ footer {
 }
 
 @media (min-width: 720px) {
-  .details-info {
-    /* padding: unset; */
-
-  }
-.grid-container {
+  .grid-container {
     grid-template-areas:
       "  info info card "
       "list list card"
       "footer footer footer ";
-      gap: 20px;
-      padding-right: 15px;
-      /* padding: 15px; */
-      /* padding: 30px; */
-
+    gap: 20px;
+    padding-right: 15px;
+    max-width: 900px;
   }
-  .image-banner{
-    height: 280px;
+  .details-image-banner {
+    height: 220px;
+  }
+  .details-card-container {
+    padding-top: 15px;
   }
   .details-card {
-    margin: 15px 0px 24px;
-    height: 400px;
-    /* width: 90%; */
+    border: 2px solid var(--white-border);
+    box-shadow: 0px 0px 25px -13px rgb(0, 0, 0, 0.3);
   }
-  .details-card-info {
-    padding: 12px 10px;
-  }
-  .details-card-title {
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    padding-right: 12px;
-  }
+
   .details-card-title span {
-    display: inline-block;
     max-width: 400px;
   }
-  #details-card-author {
-    word-wrap: break-word;
-    text-overflow: ellipsis;
-  }
-  .add-favourite-box {
-    padding: 6px 10px 0px;
-    font-size: 12px;
-  }
-  .add-favourite-box button {
-    width: 100%;
-    height: 40px;
-    gap: 5px;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 2px;
-    margin-bottom: 5px;
-  }
-  .add-favourite-box button ion-icon {
-    font-size: 24px;
-  }
-  .add-favourite-box > :first-child {
-    margin-bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  .add-favourite-box > :last-child {
-    margin-bottom: 10px;
-    font-size: 12px;
-    display: block;
-    text-align: center;
-    margin-inline: auto;
-  }
-  .list-container {
-    margin:0px 0px 20px 15px;
-  }
-  
-  
 
-}
-@media (min-width: 1120px) {
-  .grid-container{
-    width: 80%;
+  .add-favourite-box button {
+    font-size: 16px;
+  }
+
+  .list-container {
+    margin: 0px 0px 20px 15px;
   }
 }
 @media (min-width: 1440px) {
   #details-top-bar-title {
     font-size: 24px;
   }
-.grid-container{
-  width: 66%;
-  gap: 26px;
-}
-.details-card{
-  width: 80%;
-}
-
+  .grid-container {
+    max-width: 920px;
+    gap: 30px;
+  }
+  .details-info {
+    padding: 30px 0px 30px 15px;
+  }
+  .details-info h2 {
+    font-size: 12px;
+  }
+  .details-info .rating-container {
+    margin-bottom: 24px;
+  }
+  .details-card-container {
+    max-width: 320px;
+    padding-block: 30px;
+  }
+  .details-image-banner {
+    height: 200px;
+  }
   .details-card-info {
-    padding: 18px 16px 0px;
+    padding: 18px 16px;
   }
   .details-card-title {
     margin-bottom: 10px;
@@ -361,11 +287,8 @@ footer {
     font-size: 12px;
   }
   .add-favourite-box button {
-    width: 100%;
     height: 55px;
     font-size: 22px;
-    font-weight: 400;
-    border-radius: 2px;
     margin-bottom: 10px;
   }
   .add-favourite-box button ion-icon {
@@ -374,15 +297,20 @@ footer {
   .add-favourite-box > :first-child {
     margin-bottom: 10px;
     font-weight: 400;
-    width: 100%;
     text-align: start;
     font-size: 16px;
   }
   .add-favourite-box > :last-child {
     margin-bottom: 8px;
     font-size: 12px;
-    display: block;
-    text-align: center;
-    margin-inline: auto;
   }
+  .list-container {
+    border-radius: 6px;
+  }
+  .list-container h2,
+  .list-container ul li span {
+    padding-block: 14px;
+    padding-left: 32px;
+  }
+  
 }
