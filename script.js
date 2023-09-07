@@ -87,6 +87,7 @@ searchBar.addEventListener("input", finder);
 filterBy.addEventListener("change", filterer);
 function filterer() {
   const value = filterBy.value;
+  console.log(allTopics);
   if (value == "Default") return topicsToShow;
    const filteredTopics = allTopics.filter(function (item) {
      return item.category == value;
