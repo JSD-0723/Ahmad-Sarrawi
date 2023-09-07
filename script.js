@@ -92,7 +92,7 @@ function filterer() {
      return item.category == value;
      
    });
-  topicsToShow = filteredTopics;
+  // topicsToShow = filteredTopics;
   cardsContainer.innerHTML = '';
   filteredTopics.forEach(item => {
     cardsContainer.innerHTML += cardCreator(item);
