@@ -88,7 +88,7 @@ filterBy.addEventListener("change", filterer);
 function filterer() {
   const value = filterBy.value;
   if (value == "Default") return topicsToShow;
-   const filteredTopics = topicsToShow.filter(function (item) {
+   const filteredTopics = allTopics.filter(function (item) {
      return item.category == value;
      
    });
