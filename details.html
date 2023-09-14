@@ -22,7 +22,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
-  <body>
+  <body >
     <header>
       <div class="top-bar container">
         <h3 id="details-top-bar-title">Web Topics</h3>
@@ -71,7 +71,7 @@
           </div>
           <div class="details-card-container">
 
-            <div class="details-card">
+            <div class="details-card" id="detailsCard">
               <div class="details-image-banner">
                 <img src="assets/images/javascript.jpg" />
               </div>
@@ -91,8 +91,8 @@
             </div>
           </div>
           <div class="list-container">
-            <h2>HTML Sub Topics</h2>
-            <ul>
+            <h2 id="list-heading">HTML Sub Topics</h2>
+            <ul id="sub-topics-list">
               <li><span>
                 <ion-icon
                 name="checkmark-circle-outline"
@@ -190,6 +190,6 @@
       </section>
     </main>
     
-    <script src="script.js"></script>
+    <script src="detail.js" type="module"></script>
   </body>
 </html>

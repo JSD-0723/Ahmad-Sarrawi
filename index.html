@@ -59,9 +59,9 @@
             <div class="drop-down-container" id="sort-box">
               <label for="sort">Sort by:</label>
               <select name="sort" id="sort">
-                <option value="Default">Default</option>
-                <option value="Topic Title">Topic Title</option>
-                <option value="Author Name">Author Name</option>
+                <option value="id">Default</option>
+                <option value="topic">Topic Title</option>
+                <option value="name">Author Name</option>
               </select>
             </div>
             <div class="drop-down-container" id="filter-box">
@@ -74,7 +74,7 @@
         </section>
       </div>
       <div class="search-result-title container">
-        <h1>"24" Web Topics Found</h1>
+        <h1><span id="number-of-topics"></span> </h1>
       </div>
       <section id="cardsContainer" class="cards-container container">
         <!-----------------Card--------------->
@@ -121,7 +121,6 @@
     <footer>
       <span>Developed with <ion-icon name="heart"></ion-icon> © 2023</span>
     </footer>
-    <script src="script.js" type="module"></script>
-    <script src="functions.js" type="module"></script>
+    <script src="home.js" type="module"></script>
   </body>
 </html>
