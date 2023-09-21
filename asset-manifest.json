@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ahmad-sarrawi/static/css/main.b6252cd5.css",
+    "main.js": "/ahmad-sarrawi/static/js/main.bf8ee1ad.js",
+    "static/js/787.5d8e3904.chunk.js": "/ahmad-sarrawi/static/js/787.5d8e3904.chunk.js",
+    "static/media/html.png": "/ahmad-sarrawi/static/media/html.c173306012e5b8703ee8.png",
+    "index.html": "/ahmad-sarrawi/index.html",
+    "main.b6252cd5.css.map": "/ahmad-sarrawi/static/css/main.b6252cd5.css.map",
+    "main.bf8ee1ad.js.map": "/ahmad-sarrawi/static/js/main.bf8ee1ad.js.map",
+    "787.5d8e3904.chunk.js.map": "/ahmad-sarrawi/static/js/787.5d8e3904.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6252cd5.css",
+    "static/js/main.bf8ee1ad.js"
+  ]
+}
